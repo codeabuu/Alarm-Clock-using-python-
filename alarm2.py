@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 import time
 import datetime
-import pytz
 
 
 def set_alarm(time_set):
@@ -13,13 +12,3 @@ def set_alarm(time_set):
         else:
             print("Time is: " + current_time)
             time.sleep(1)
-            snooze = input("Press any alphabet key to snooze: ")
-            if snooze.isalpha():
-                time_set = (datetime.datetime.now() + datetime.timedelta(minutes=1).strftime("%H:%M:%S"))
-                print("Alarm snoozed for 1 min.")
-            else:
-                break
-            time.sleep(1)
-
-time_set = input("Enter time in HH:M:S: ")
-set_alarm(time_set)
