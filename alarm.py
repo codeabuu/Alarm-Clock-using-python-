@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 import time
+import datetime
 
 CLEAR = "\033[2J"
 CLEAR_AND_RETURN = "\033[H"
 def alarm_set(seconds):
     time_elapsed = 0
+
 
     while time_elapsed < seconds:
         time.sleep(1)
