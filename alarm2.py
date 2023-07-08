@@ -10,5 +10,5 @@ def set_alarm(time_set):
             print("Time to wake up and grind!")
             break
         else:
-            print("Time is: " + current_time)
+            print(current_time)
             time.sleep(1)
