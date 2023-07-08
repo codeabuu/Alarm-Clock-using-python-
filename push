@@ -2,5 +2,4 @@
 git add .
 git commit -m "${*:1}"
 git push
-CLEAR = "\033[H"
-print(CLEAR)
+clear
